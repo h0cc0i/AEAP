@@ -2619,12 +2619,16 @@ namespace AutoPrintExcel
                                 System.IO.File.Copy(_of.FileName, _PathBCDefine, true);
                             }
                         }
+
+                        //2016/09/09 HonC Excelファイルを読んで、保存する。
                         _dtbListHino = GetDataTable(_PathBCDefine, "DinhNghiaBanGhepBC.xlsx");
+
+                        //2016/09/09 HonC 何もない所に自動書いてくる。
                         _dtbListHino = LibStub.AutoCompleteDefineExcel(_dtbListHino);
                         // Define list DataSource OK
-                        LibStub.CheckExtendsData(_dtbListHino, _dtbExcel);
+                        //LibStub.CheckExtendsData(_dtbListHino, _dtbExcel);
                         _dtbExcel = LibStub.CheckExtendsData(_dtbListHino, _dtbExcel);
-                        dtgListSourceHino.DataSource = _dtbExcel;
+                        dtgListSourceHino.DataSource =_dtbExcel;
 
                         #endregion
 
@@ -2775,10 +2779,19 @@ namespace AutoPrintExcel
 
             }
         }
-
+        
         private void btnAbout_Click(object sender, EventArgs e)
         {
         }
+
+        //2016/09/08 HonC add Fix define name of BC
+        private void btnfixDefineBC_Click(object sender, EventArgs e)
+        {
+            FixNameofDefineListBC _fix = new FixNameofDefineListBC();
+            _fix.ShowDialog();
+        }
+
+
     }
 }
 

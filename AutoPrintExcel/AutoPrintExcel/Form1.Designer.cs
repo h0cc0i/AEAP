@@ -110,6 +110,8 @@
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.btnCustomPrinter = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.toolStripMenuItem5 = new System.Windows.Forms.ToolStripSeparator();
+            this.btnfixDefineBC = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.tpListDataSource.SuspendLayout();
@@ -352,57 +354,57 @@
             this.toolStripMenuItem16,
             this.btnExecutePDFFile});
             this.btnEditAndPrint.Name = "btnEditAndPrint";
-            this.btnEditAndPrint.Size = new System.Drawing.Size(90, 20);
+            this.btnEditAndPrint.Size = new System.Drawing.Size(97, 20);
             this.btnEditAndPrint.Text = "Edit and Print";
             this.btnEditAndPrint.Click += new System.EventHandler(this.btnEditAndPrint_Click);
             // 
             // btnGetPathCheckSheet
             // 
             this.btnGetPathCheckSheet.Name = "btnGetPathCheckSheet";
-            this.btnGetPathCheckSheet.Size = new System.Drawing.Size(184, 22);
+            this.btnGetPathCheckSheet.Size = new System.Drawing.Size(198, 22);
             this.btnGetPathCheckSheet.Text = "Get Path CheckSheet";
             this.btnGetPathCheckSheet.Click += new System.EventHandler(this.btnGetPathExcel_Click);
             // 
             // toolStripMenuItem4
             // 
             this.toolStripMenuItem4.Name = "toolStripMenuItem4";
-            this.toolStripMenuItem4.Size = new System.Drawing.Size(181, 6);
+            this.toolStripMenuItem4.Size = new System.Drawing.Size(195, 6);
             // 
             // btnGetPathKensa
             // 
             this.btnGetPathKensa.Name = "btnGetPathKensa";
-            this.btnGetPathKensa.Size = new System.Drawing.Size(184, 22);
+            this.btnGetPathKensa.Size = new System.Drawing.Size(198, 22);
             this.btnGetPathKensa.Text = "Get Path Kensa";
             this.btnGetPathKensa.Click += new System.EventHandler(this.btnGetPathExcelforKenSa);
             // 
             // toolStripMenuItem8
             // 
             this.toolStripMenuItem8.Name = "toolStripMenuItem8";
-            this.toolStripMenuItem8.Size = new System.Drawing.Size(181, 6);
+            this.toolStripMenuItem8.Size = new System.Drawing.Size(195, 6);
             // 
             // btnJustPrint
             // 
             this.btnJustPrint.Name = "btnJustPrint";
-            this.btnJustPrint.Size = new System.Drawing.Size(184, 22);
+            this.btnJustPrint.Size = new System.Drawing.Size(198, 22);
             this.btnJustPrint.Text = "Just Print";
             this.btnJustPrint.Click += new System.EventHandler(this.btnJustPrint_Click);
             // 
             // toolStripSeparator1
             // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(181, 6);
+            this.toolStripSeparator1.Size = new System.Drawing.Size(195, 6);
             // 
             // btnPrintKensa
             // 
             this.btnPrintKensa.Name = "btnPrintKensa";
-            this.btnPrintKensa.Size = new System.Drawing.Size(184, 22);
+            this.btnPrintKensa.Size = new System.Drawing.Size(198, 22);
             this.btnPrintKensa.Text = "Print Kensa";
             this.btnPrintKensa.Click += new System.EventHandler(this.printToolStripMenuItem_Click);
             // 
             // toolStripMenuItem16
             // 
             this.toolStripMenuItem16.Name = "toolStripMenuItem16";
-            this.toolStripMenuItem16.Size = new System.Drawing.Size(181, 6);
+            this.toolStripMenuItem16.Size = new System.Drawing.Size(195, 6);
             // 
             // btnExecutePDFFile
             // 
@@ -411,24 +413,24 @@
             this.aToolStripMenuItem,
             this.btnPrintDrawing});
             this.btnExecutePDFFile.Name = "btnExecutePDFFile";
-            this.btnExecutePDFFile.Size = new System.Drawing.Size(184, 22);
+            this.btnExecutePDFFile.Size = new System.Drawing.Size(198, 22);
             this.btnExecutePDFFile.Text = "Execute Pdf File";
             // 
             // btnGetPathDrawing
             // 
             this.btnGetPathDrawing.Name = "btnGetPathDrawing";
-            this.btnGetPathDrawing.Size = new System.Drawing.Size(166, 22);
+            this.btnGetPathDrawing.Size = new System.Drawing.Size(177, 22);
             this.btnGetPathDrawing.Text = "Get Path Drawing";
             // 
             // aToolStripMenuItem
             // 
             this.aToolStripMenuItem.Name = "aToolStripMenuItem";
-            this.aToolStripMenuItem.Size = new System.Drawing.Size(163, 6);
+            this.aToolStripMenuItem.Size = new System.Drawing.Size(174, 6);
             // 
             // btnPrintDrawing
             // 
             this.btnPrintDrawing.Name = "btnPrintDrawing";
-            this.btnPrintDrawing.Size = new System.Drawing.Size(166, 22);
+            this.btnPrintDrawing.Size = new System.Drawing.Size(177, 22);
             this.btnPrintDrawing.Text = "Print Drawing";
             this.btnPrintDrawing.Click += new System.EventHandler(this.btnPrintDrawing_Click);
             // 
@@ -441,51 +443,53 @@
             this.toolStripMenuItem21,
             this.btngetPathNEW,
             this.toolStripMenuItem20,
-            this.btnprintCustom});
+            this.btnprintCustom,
+            this.toolStripMenuItem5,
+            this.btnfixDefineBC});
             this.btnCustomPrintMenu.Name = "btnCustomPrintMenu";
-            this.btnCustomPrintMenu.Size = new System.Drawing.Size(89, 20);
+            this.btnCustomPrintMenu.Size = new System.Drawing.Size(95, 20);
             this.btnCustomPrintMenu.Text = "Custom Print";
             // 
             // btnImportListDSNew
             // 
             this.btnImportListDSNew.Name = "btnImportListDSNew";
-            this.btnImportListDSNew.Size = new System.Drawing.Size(197, 22);
+            this.btnImportListDSNew.Size = new System.Drawing.Size(216, 22);
             this.btnImportListDSNew.Text = "Import List Data Source";
             this.btnImportListDSNew.Click += new System.EventHandler(this.mnsImportCheckSheet_Click);
             // 
             // toolStripMenuItem19
             // 
             this.toolStripMenuItem19.Name = "toolStripMenuItem19";
-            this.toolStripMenuItem19.Size = new System.Drawing.Size(194, 6);
+            this.toolStripMenuItem19.Size = new System.Drawing.Size(213, 6);
             // 
             // btnimportListExcuteNEW
             // 
             this.btnimportListExcuteNEW.Name = "btnimportListExcuteNEW";
-            this.btnimportListExcuteNEW.Size = new System.Drawing.Size(197, 22);
+            this.btnimportListExcuteNEW.Size = new System.Drawing.Size(216, 22);
             this.btnimportListExcuteNEW.Text = "Import List Execute";
             this.btnimportListExcuteNEW.Click += new System.EventHandler(this.importListExcuteToolStripMenuItem_Click);
             // 
             // toolStripMenuItem21
             // 
             this.toolStripMenuItem21.Name = "toolStripMenuItem21";
-            this.toolStripMenuItem21.Size = new System.Drawing.Size(194, 6);
+            this.toolStripMenuItem21.Size = new System.Drawing.Size(213, 6);
             // 
             // btngetPathNEW
             // 
             this.btngetPathNEW.Name = "btngetPathNEW";
-            this.btngetPathNEW.Size = new System.Drawing.Size(197, 22);
+            this.btngetPathNEW.Size = new System.Drawing.Size(216, 22);
             this.btngetPathNEW.Text = "Get Path of File";
             this.btngetPathNEW.Click += new System.EventHandler(this.getPathOfFileToolStripMenuItem_Click);
             // 
             // toolStripMenuItem20
             // 
             this.toolStripMenuItem20.Name = "toolStripMenuItem20";
-            this.toolStripMenuItem20.Size = new System.Drawing.Size(194, 6);
+            this.toolStripMenuItem20.Size = new System.Drawing.Size(213, 6);
             // 
             // btnprintCustom
             // 
             this.btnprintCustom.Name = "btnprintCustom";
-            this.btnprintCustom.Size = new System.Drawing.Size(197, 22);
+            this.btnprintCustom.Size = new System.Drawing.Size(216, 22);
             this.btnprintCustom.Text = "Print Custom";
             this.btnprintCustom.Click += new System.EventHandler(this.printCustomToolStripMenuItem_Click);
             // 
@@ -496,7 +500,7 @@
             this.toolStripMenuItem9,
             this.btnAbout});
             this.btnHelp.Name = "btnHelp";
-            this.btnHelp.Size = new System.Drawing.Size(44, 20);
+            this.btnHelp.Size = new System.Drawing.Size(45, 20);
             this.btnHelp.Text = "Help";
             // 
             // btnLanguage
@@ -506,37 +510,37 @@
             this.toolStripMenuItem11,
             this.btnVNLanguage});
             this.btnLanguage.Name = "btnLanguage";
-            this.btnLanguage.Size = new System.Drawing.Size(152, 22);
+            this.btnLanguage.Size = new System.Drawing.Size(130, 22);
             this.btnLanguage.Text = "Language";
             // 
             // btnEnglishLanguage
             // 
             this.btnEnglishLanguage.Name = "btnEnglishLanguage";
-            this.btnEnglishLanguage.Size = new System.Drawing.Size(152, 22);
+            this.btnEnglishLanguage.Size = new System.Drawing.Size(145, 22);
             this.btnEnglishLanguage.Text = "EngLish";
             this.btnEnglishLanguage.Click += new System.EventHandler(this.btnEnglishLanguage_Click_1);
             // 
             // toolStripMenuItem11
             // 
             this.toolStripMenuItem11.Name = "toolStripMenuItem11";
-            this.toolStripMenuItem11.Size = new System.Drawing.Size(149, 6);
+            this.toolStripMenuItem11.Size = new System.Drawing.Size(142, 6);
             // 
             // btnVNLanguage
             // 
             this.btnVNLanguage.Name = "btnVNLanguage";
-            this.btnVNLanguage.Size = new System.Drawing.Size(152, 22);
+            this.btnVNLanguage.Size = new System.Drawing.Size(145, 22);
             this.btnVNLanguage.Text = "VietNamese";
             this.btnVNLanguage.Click += new System.EventHandler(this.btnVNLanguage_Click);
             // 
             // toolStripMenuItem9
             // 
             this.toolStripMenuItem9.Name = "toolStripMenuItem9";
-            this.toolStripMenuItem9.Size = new System.Drawing.Size(149, 6);
+            this.toolStripMenuItem9.Size = new System.Drawing.Size(127, 6);
             // 
             // btnAbout
             // 
             this.btnAbout.Name = "btnAbout";
-            this.btnAbout.Size = new System.Drawing.Size(152, 22);
+            this.btnAbout.Size = new System.Drawing.Size(130, 22);
             this.btnAbout.Text = "About";
             this.btnAbout.Click += new System.EventHandler(this.btnAbout_Click);
             // 
@@ -857,6 +861,18 @@
             this.panel2.Size = new System.Drawing.Size(332, 382);
             this.panel2.TabIndex = 25;
             // 
+            // toolStripMenuItem5
+            // 
+            this.toolStripMenuItem5.Name = "toolStripMenuItem5";
+            this.toolStripMenuItem5.Size = new System.Drawing.Size(213, 6);
+            // 
+            // btnfixDefineBC
+            // 
+            this.btnfixDefineBC.Name = "btnfixDefineBC";
+            this.btnfixDefineBC.Size = new System.Drawing.Size(216, 22);
+            this.btnfixDefineBC.Text = "Fix Define List BeckMan";
+            this.btnfixDefineBC.Click += new System.EventHandler(this.btnfixDefineBC_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
@@ -983,6 +999,8 @@
         private System.Windows.Forms.ToolStripMenuItem btnGetPathDrawing;
         private System.Windows.Forms.ToolStripSeparator aToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem btnPrintDrawing;
+        private System.Windows.Forms.ToolStripSeparator toolStripMenuItem5;
+        private System.Windows.Forms.ToolStripMenuItem btnfixDefineBC;
     }
 }
 

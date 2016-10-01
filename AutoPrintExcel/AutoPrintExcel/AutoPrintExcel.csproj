@@ -103,6 +103,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Button_Class\btnClass.cs" />
+    <Compile Include="FixNameofDefineListBC.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FixNameofDefineListBC.Designer.cs">
+      <DependentUpon>FixNameofDefineListBC.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -131,6 +137,9 @@
     <Compile Include="wfListPageSource.Designer.cs">
       <DependentUpon>wfListPageSource.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="FixNameofDefineListBC.resx">
+      <DependentUpon>FixNameofDefineListBC.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
