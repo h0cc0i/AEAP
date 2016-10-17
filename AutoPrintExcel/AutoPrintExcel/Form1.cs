@@ -2449,7 +2449,11 @@ namespace AutoPrintExcel
                 LibPrintExcel._DEFAULTPDFTEMPPATH = LibPrintExcel.AutoCreateTempPdf();
             }
 
-            if (LibPrintExcel._DEFAULTSETTINGS.PrinterSettings.FromPage > 0)
+            ///Comment for test with print by one note
+            ///if (LibPrintExcel._DEFAULTSETTINGS.PrinterSettings.FromPage > 0)
+            ///
+
+            if (1> 0)
             {
                 lbnMessage.Text = string.Empty;
                 lbnMessage.ForeColor = Color.Blue;
@@ -2697,14 +2701,31 @@ namespace AutoPrintExcel
 
             //Check if not found --> 
             int _dtbExcelCount = _dtbExcel.Rows.Count;
-            for (int i = 0; i < _dtbExcel.Rows.Count - 1; i++)
+
+
+            ///2016/10/17 HonC comment and check new loop delete null row
+            //for (int i = 0; i < _dtbExcel.Rows.Count; i++)
+            //{
+            //    if (string.IsNullOrEmpty(_dtbExcel.Rows[i]["Path"].ToString()))
+            //    {
+            //        _dtbError.Rows.Add(_dtbExcel.Rows[i]["Name"].ToString());
+            //        _dtbExcel.Rows[i].Delete();
+            //    }
+            //}
+
+            foreach (DataRow _row in _dtbExcel.Select())
             {
-                if (string.IsNullOrEmpty(_dtbExcel.Rows[i]["Path"].ToString()))
+                if (string.IsNullOrEmpty(_row["Path"].ToString()))
                 {
-                    _dtbError.Rows.Add(_dtbExcel.Rows[i]["Name"].ToString());
-                    _dtbExcel.Rows[i].Delete();
+                    // add new row for datatable Error
+                    _dtbError.Rows.Add(_row["Name"].ToString());
+                    // Delete current row if null
+                    _row.Delete();
+                    _dtbExcel.AcceptChanges();
+                    
                 }
             }
+
             dtgError.DataSource = _dtbError;
 
             lbnMessage.Text = "Get Path Excel Succesfull.";

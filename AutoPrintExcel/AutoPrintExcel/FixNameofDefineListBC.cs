@@ -113,8 +113,27 @@ namespace AutoPrintExcel
             //2016/09/27 create button Save
             // Copy File Define list BC -> destination.
             // BCリストを存在するかどうかチェックする。
-            string _PathBCDefine = Directory.GetCurrentDirectory() + "DinhNghiaBanGhepBC.xlsx";
-            System.IO.File.Copy(_TempPath, _PathBCDefine, true);
+            var _comfirmDialog = MessageBox.Show("Bạn có muốn cập nhật file định nghĩa hàng BeckMan ?","Cập nhật file",MessageBoxButtons.YesNo);
+            if (_comfirmDialog == System.Windows.Forms.DialogResult.Yes)
+            {
+                try
+                {
+                    string _PathBCDefine = Directory.GetCurrentDirectory() + "DinhNghiaBanGhepBC.xlsx";
+                    // Copy list Define BC to Destination
+                    System.IO.File.Copy(_TempPath, _PathBCDefine, true);
+                    this.Close();
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.ToString());
+                }
+                
+            }
+        }
+
+        private void btnQuit_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

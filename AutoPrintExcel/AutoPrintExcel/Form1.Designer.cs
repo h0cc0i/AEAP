@@ -76,6 +76,8 @@
             this.btngetPathNEW = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem20 = new System.Windows.Forms.ToolStripSeparator();
             this.btnprintCustom = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem5 = new System.Windows.Forms.ToolStripSeparator();
+            this.btnfixDefineBC = new System.Windows.Forms.ToolStripMenuItem();
             this.btnHelp = new System.Windows.Forms.ToolStripMenuItem();
             this.btnLanguage = new System.Windows.Forms.ToolStripMenuItem();
             this.btnEnglishLanguage = new System.Windows.Forms.ToolStripMenuItem();
@@ -110,8 +112,6 @@
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.btnCustomPrinter = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.toolStripMenuItem5 = new System.Windows.Forms.ToolStripSeparator();
-            this.btnfixDefineBC = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.tpListDataSource.SuspendLayout();
@@ -493,6 +493,18 @@
             this.btnprintCustom.Text = "Print Custom";
             this.btnprintCustom.Click += new System.EventHandler(this.printCustomToolStripMenuItem_Click);
             // 
+            // toolStripMenuItem5
+            // 
+            this.toolStripMenuItem5.Name = "toolStripMenuItem5";
+            this.toolStripMenuItem5.Size = new System.Drawing.Size(213, 6);
+            // 
+            // btnfixDefineBC
+            // 
+            this.btnfixDefineBC.Name = "btnfixDefineBC";
+            this.btnfixDefineBC.Size = new System.Drawing.Size(216, 22);
+            this.btnfixDefineBC.Text = "Fix Define List BeckMan";
+            this.btnfixDefineBC.Click += new System.EventHandler(this.btnfixDefineBC_Click);
+            // 
             // btnHelp
             // 
             this.btnHelp.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -634,6 +646,8 @@
             // 
             // dtgListSourceHino
             // 
+            this.dtgListSourceHino.AllowUserToAddRows = false;
+            this.dtgListSourceHino.AllowUserToDeleteRows = false;
             this.dtgListSourceHino.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dtgListSourceHino.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dtgListSourceHino.Location = new System.Drawing.Point(0, 0);
@@ -860,18 +874,6 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(332, 382);
             this.panel2.TabIndex = 25;
-            // 
-            // toolStripMenuItem5
-            // 
-            this.toolStripMenuItem5.Name = "toolStripMenuItem5";
-            this.toolStripMenuItem5.Size = new System.Drawing.Size(213, 6);
-            // 
-            // btnfixDefineBC
-            // 
-            this.btnfixDefineBC.Name = "btnfixDefineBC";
-            this.btnfixDefineBC.Size = new System.Drawing.Size(216, 22);
-            this.btnfixDefineBC.Text = "Fix Define List BeckMan";
-            this.btnfixDefineBC.Click += new System.EventHandler(this.btnfixDefineBC_Click);
             // 
             // Form1
             // 
