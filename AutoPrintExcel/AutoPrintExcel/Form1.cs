@@ -2449,11 +2449,8 @@ namespace AutoPrintExcel
                 LibPrintExcel._DEFAULTPDFTEMPPATH = LibPrintExcel.AutoCreateTempPdf();
             }
 
-            ///Comment for test with print by one note
-            ///if (LibPrintExcel._DEFAULTSETTINGS.PrinterSettings.FromPage > 0)
-            ///
-
-            if (1> 0)
+            // Check tray of curent printer
+            if (LibPrintExcel._DEFAULTSETTINGS.PrinterSettings.FromPage > 0)
             {
                 lbnMessage.Text = string.Empty;
                 lbnMessage.ForeColor = Color.Blue;
@@ -2614,13 +2611,23 @@ namespace AutoPrintExcel
                         //if file BC define is NOT exist --> copy file from ... to Current Directory
                         if (!File.Exists(_PathBCDefine))
                         {
-                            OpenFileDialog _of = new OpenFileDialog();
-                            _of.Filter = "Excel Files|*.xlsx;*.xls;*.xlsm";
-                            _of.Multiselect = false;
-                            if (_of.ShowDialog() == System.Windows.Forms.DialogResult.OK)
+                            //2016/10/17 HonC : ask for add DefineListBeckMan
+                            DialogResult _dlgask = MessageBox.Show("Bạn muốn cập nhật danh sách định nghĩa hàng BeckMan ?", "Xác nhận", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                            if (_dlgask == DialogResult.Yes)
                             {
-                                // copy ListDefineBC to Current Directory
-                                System.IO.File.Copy(_of.FileName, _PathBCDefine, true);
+                                OpenFileDialog _of = new OpenFileDialog();
+                                _of.Filter = "Excel Files|*.xlsx;*.xls;*.xlsm";
+                                _of.Multiselect = false;
+                                if (_of.ShowDialog() == System.Windows.Forms.DialogResult.OK)
+                                {
+                                    ///2016/10/18 HonC Copy File to Des with permission admin.
+                                    ///fix app manifest
+                                    ///requestedExecutionLevel level="requireAdministrator"
+
+                                    // copy ListDefineBC to Current Directory
+                                    System.IO.File.Copy(_of.FileName, _PathBCDefine, true);
+
+                                }
                             }
                         }
 
@@ -2632,7 +2639,7 @@ namespace AutoPrintExcel
                         // Define list DataSource OK
                         //LibStub.CheckExtendsData(_dtbListHino, _dtbExcel);
                         _dtbExcel = LibStub.CheckExtendsData(_dtbListHino, _dtbExcel);
-                        dtgListSourceHino.DataSource =_dtbExcel;
+                        dtgListSourceHino.DataSource = _dtbExcel;
 
                         #endregion
 
@@ -2646,6 +2653,7 @@ namespace AutoPrintExcel
                 }
                 catch (Exception ex)
                 {
+                    MessageBox.Show(ex.ToString());
                     lbnMessage.Text = "Import list name of check sheet failed";
                     lbnMessage.ForeColor = Color.Red;
                     lbnMessage.Text = "";
@@ -2722,14 +2730,14 @@ namespace AutoPrintExcel
                     // Delete current row if null
                     _row.Delete();
                     _dtbExcel.AcceptChanges();
-                    
+
                 }
             }
 
             dtgError.DataSource = _dtbError;
 
             lbnMessage.Text = "Get Path Excel Succesfull.";
-            lbnQuantity.Text =dtgListPrint.Rows.Count.ToString() +  "/" + lbnQuantity.Text;
+            lbnQuantity.Text = dtgListPrint.Rows.Count.ToString() + "/" + lbnQuantity.Text;
         }
 
         private void ahihiToolStripMenuItem_Click(object sender, EventArgs e)
@@ -2800,7 +2808,7 @@ namespace AutoPrintExcel
 
             }
         }
-        
+
         private void btnAbout_Click(object sender, EventArgs e)
         {
         }

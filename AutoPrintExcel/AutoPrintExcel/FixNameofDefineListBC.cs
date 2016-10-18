@@ -90,14 +90,8 @@ namespace AutoPrintExcel
                     _dtbExcel = GetDataTable(_oFG.FileName.ToString(), _oFG.SafeFileName.ToString());
                     if ((_dtbExcel != null) && _dtbExcel.Rows.Count > 0)
                         dtgDefineBC.DataSource = _dtbExcel;
-
+                    // 
                     _TempPath = _oFG.FileName.ToString();
-
-
-                    // 2016/09/27 Ngay dep troi, ngoi code choi
-                    // if (File.Exists(_PathBCDefine))
-                    // {
-                    // update List Define BC use copy to destination
                 }
             }
             catch (Exception ex)

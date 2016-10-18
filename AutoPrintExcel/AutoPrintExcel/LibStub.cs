@@ -11,7 +11,7 @@ namespace AutoPrintExcel
     public class LibStub
     {
         public static string _DefaultLanguage = "vi-VN";
-        private static DataTable _dtbExtend;
+        //private static DataTable _dtbExtend;
         private static string _tempCheckSheet = string.Empty;
 
         //2016/08/01 _HonC

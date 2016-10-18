@@ -258,4 +258,7 @@
   <data name="Tray" xml:space="preserve">
     <value>Khay in</value>
   </data>
+  <data name="FixDefineBC" xml:space="preserve">
+    <value>Sửa file định nghĩa BeckMan</value>
+  </data>
 </root>

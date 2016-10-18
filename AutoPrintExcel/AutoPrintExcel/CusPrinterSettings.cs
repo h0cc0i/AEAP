@@ -486,7 +486,7 @@ namespace CustomprinterSettings
 
         {
 
-            PrinterData PData = new PrinterData();
+          //  PrinterData PData = new PrinterData();
 
             DEVMODE dm;
 

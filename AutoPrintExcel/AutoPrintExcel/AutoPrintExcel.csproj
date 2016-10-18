@@ -57,6 +57,11 @@
   <PropertyGroup>
     <ApplicationIcon>Copy.ico</ApplicationIcon>
   </PropertyGroup>
+  <PropertyGroup />
+  <PropertyGroup />
+  <PropertyGroup>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="AutoPrintExcel.resources">
       <HintPath>obj\x86\Release\en-US\AutoPrintExcel.resources.dll</HintPath>
@@ -144,7 +149,6 @@
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Lang\MyResource.en-EN.resx" />
-    <EmbeddedResource Include="Lang\MyResource.en-US.resx" />
     <EmbeddedResource Include="Lang\MyResource.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>MyResource.Designer.cs</LastGenOutput>
@@ -166,6 +170,7 @@
     <EmbeddedResource Include="wfListPageSource.resx">
       <DependentUpon>wfListPageSource.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="app.manifest" />
     <None Include="ClassDiagram1.cd" />
     <None Include="Lib\Fonts\Code39.ttf" />
     <None Include="Lib\Fonts\SketchFlow Print.ttf" />

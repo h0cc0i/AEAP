@@ -252,4 +252,7 @@
   <data name="SaveSettings" xml:space="preserve">
     <value>Save Settings</value>
   </data>
+  <data name="FixDefineBC" xml:space="preserve">
+    <value>Fix List Define BeckMan</value>
+  </data>
 </root>
