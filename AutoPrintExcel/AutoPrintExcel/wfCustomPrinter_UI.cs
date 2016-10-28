@@ -10,6 +10,7 @@ using System.Drawing.Printing;
 using Spire.Pdf;
 using System.Globalization;
 using System.Resources;
+using System.IO;
 
 namespace AutoPrintExcel
 {
@@ -57,27 +58,52 @@ namespace AutoPrintExcel
         {
             try
             {
+                //2016/10/24 HonC
                 LoadPrinterSettings();
                 //2016/07/27 _HonC load default Language
                 LoadLaguage(LibStub._DefaultLanguage);
+
+                //2016/10/25 HonC   Check Printer Config
+                string _path = Directory.GetCurrentDirectory() + "PrinterConfig.txt";
+                if (!File.Exists(_path))
+                    CreateFileConfigPrinter("", "", "");
+                else
+                {
+                    //2016/10/26 HonC Read Printer Config from file text
+                    var _lines = File.ReadAllLines(_path);
+                    cmbTray.SelectedValue = _lines[2].Replace("Printer Tray         : ", "");
+                    cmbDuplex.SelectedValue = _lines[3].Replace("Printer Duplex       : ", "");
+                    string _PrPage = _lines[4].Replace("Printer Page To Page : ", "").Replace("To", "");
+                    txtfromPage.Text = _PrPage.Split(' ')[0].ToString();
+                    txtToPage.Text = _PrPage.Split(' ')[2].ToString();
+                }
             }
-            catch (Exception)
+            catch (Exception ex)
             {
-
-                throw;
+                MessageBox.Show(ex.ToString());
             }
         }
 
-        private void Quít_Click(object sender, EventArgs e)
-        {
-            this.Close();
-        }
 
         //Set default setting for Printer
         private void btnUseDefaultSettings_Click(object sender, EventArgs e)
         {
+            //2016/10/24 _HonC
+            // Use default setting
             SaveDefaultSettings();
             LibPrintExcel._USECUSTOMSETTINGS = false;
+
+            DialogResult _dlg = MessageBox.Show("Bạn có muốn lưu thiết lập mặc định của máy in ?", "Xác nhận", MessageBoxButtons.YesNo);
+            if (_dlg == DialogResult.Yes)
+            {
+                //2016/10/25 HonC save Printer config to text file
+                string _prTray = "Printer Tray         : " + cmbTray.SelectedValue;
+                string _prDuplex = "Printer Duplex       : " + cmbDuplex.SelectedValue;
+                string _prPageToPage = "Printer Page To Page : " + txtfromPage.Text + " To " + txtToPage.Text;
+
+                CreateFileConfigPrinter(_prTray, _prDuplex, _prPageToPage);
+                this.Close();
+            }
         }
 
 
@@ -99,12 +125,21 @@ namespace AutoPrintExcel
                 LibPrintExcel._DEFAULTSETTINGS.PrinterSettings.FromPage = LibPrintExcel._FROMPAGE;
                 LibPrintExcel._DEFAULTSETTINGS.PrinterSettings.ToPage = LibPrintExcel._TOPAGE;
 
-                this.Close();
-            }
-            catch (Exception)
-            {
+                DialogResult _dlR = MessageBox.Show("Bạn có muốn lưu thiết lập máy in hiện tại ?", "Xác nhận", MessageBoxButtons.YesNo);
+                if (_dlR == DialogResult.Yes)
+                {
+                    //2016/10/26 HonC Save to text file
+                    string _prTray = "Printer Tray         : " + cmbTray.SelectedValue;
+                    string _prDuplex = "Printer Duplex       : " + cmbDuplex.SelectedValue;
+                    string _prPageToPage = "Printer Page To Page : " + txtfromPage.Text + " To " + txtToPage.Text;
 
-                throw;
+                    CreateFileConfigPrinter(_prTray, _prDuplex, _prPageToPage);
+                    this.Close();
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.ToString());
             }
 
 
@@ -142,6 +177,36 @@ namespace AutoPrintExcel
             btnSaveSettings.Text = rm.GetString("SaveSettings", culture);
             btnUseDefaultSettings.Text = rm.GetString("DefaultSettings", culture);
             btnQuit.Text = rm.GetString("Quit", culture);
+        }
+
+        private void Quit_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        /// <summary>
+        /// 2016/10/24 HonC
+        /// Create File Config Printer
+        /// </summary>
+        public void CreateFileConfigPrinter(string _printerTray, string _PrinterDuplex, string _PrintPageToPage)
+        {
+            try
+            {
+                string _prTray = _printerTray;
+                string _prDuplex = _PrinterDuplex;
+                string _prPageToPage = _PrintPageToPage;
+                string _Path = Directory.GetCurrentDirectory() + "PrinterConfig.txt";
+                Common.WriteTextPrinterConfig(_Path, _prTray, _prDuplex, _prPageToPage);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.ToString());
+            }
+        }
+
+        private void lblTo_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

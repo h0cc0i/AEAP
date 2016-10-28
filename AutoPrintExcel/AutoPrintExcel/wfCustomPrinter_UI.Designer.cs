@@ -318,7 +318,7 @@
             this.btnQuit.TabIndex = 2;
             this.btnQuit.Text = "Quit";
             this.btnQuit.UseVisualStyleBackColor = true;
-            this.btnQuit.Click += new System.EventHandler(this.Quít_Click);
+            this.btnQuit.Click += new System.EventHandler(this.Quit_Click);
             // 
             // lblPrintPages
             // 
@@ -395,6 +395,7 @@
             this.lblTo.TabIndex = 1;
             this.lblTo.Text = "To";
             this.lblTo.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblTo.Click += new System.EventHandler(this.lblTo_Click);
             // 
             // panel8
             // 

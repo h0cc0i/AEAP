@@ -115,6 +115,7 @@ namespace AutoPrintExcel
                     string _PathBCDefine = Directory.GetCurrentDirectory() + "DinhNghiaBanGhepBC.xlsx";
                     // Copy list Define BC to Destination
                     System.IO.File.Copy(_TempPath, _PathBCDefine, true);
+                    MessageBox.Show("Cập nhật file định nghĩa hàng BeckMan thành công. ", "Thông báo");
                     this.Close();
                 }
                 catch (Exception ex)

@@ -128,6 +128,7 @@
     <Compile Include="LibPrintExcel.cs" />
     <Compile Include="CusPrinterSettings.cs" />
     <Compile Include="LibStub.cs" />
+    <Compile Include="Lib\Common.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="wfCustomPrinter_UI.cs">
@@ -148,7 +149,7 @@
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Lang\MyResource.en-EN.resx" />
+    <EmbeddedResource Include="Lang\MyResource.en-US.resx" />
     <EmbeddedResource Include="Lang\MyResource.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>MyResource.Designer.cs</LastGenOutput>

@@ -53,7 +53,8 @@ namespace AutoPrintExcel
 
         //declare a variable to hold the CurrentCulture
         System.Globalization.CultureInfo oldCI;
-        //get the old CurrenCulture and set the new, en-US
+        //get the old CurrenCulture and set the new, 
+
         void SetNewCurrentCulture()
         {
             oldCI = System.Threading.Thread.CurrentThread.CurrentCulture;
@@ -543,6 +544,8 @@ namespace AutoPrintExcel
             btnImportListDefineHino.Text = rm.GetString("ImportListDefineHino", culture);
 
 
+            //2016/10/19 HonC   FixDefineBC
+            btnfixDefineBC.Text = rm.GetString("FixDefineBC", culture);
         }
 
         private void AutoPrint(string _pathexcel, string _sheetName)
@@ -1795,11 +1798,11 @@ namespace AutoPrintExcel
 
         }
 
-        private void btnEnglishLanguage_Click(object sender, EventArgs e)
-        {
-            btnEnglishLanguage.Checked = true;
-            SetLanguage("en-EN");
-        }
+        //private void btnEnglishLanguage_Click(object sender, EventArgs e)
+        //{
+        //    btnEnglishLanguage.Checked = true;
+        //    SetLanguage("en-EN");
+        //}
 
         private void btnVNLanguage_Click(object sender, EventArgs e)
         {
@@ -2818,6 +2821,7 @@ namespace AutoPrintExcel
         {
             FixNameofDefineListBC _fix = new FixNameofDefineListBC();
             _fix.ShowDialog();
+
         }
 
 

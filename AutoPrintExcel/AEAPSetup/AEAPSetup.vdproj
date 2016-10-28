@@ -45,50 +45,32 @@
         }
         "Entry"
         {
-        "MsmKey" = "8:_0A8DA16E37EC4131AB2DD687F34B2242"
+        "MsmKey" = "8:_0E36219A358439A160AA8B0ED53FB479"
+        "OwnerKey" = "8:_C7B97380AC624EA58F6BC10625341AF8"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_0E36219A358439A160AA8B0ED53FB479"
+        "OwnerKey" = "8:_5711C7F0D19EB146CA5372B62D992BC8"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_105ADD5EA38B49CCABEB60BC40D82028"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
-        "MsmKey" = "8:_0E36219A358439A160AA8B0ED53FB479"
+        "MsmKey" = "8:_1CDCC409B0D0A1118A4987FA1A64FBE8"
         "OwnerKey" = "8:_C7B97380AC624EA58F6BC10625341AF8"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_0E36219A358439A160AA8B0ED53FB479"
-        "OwnerKey" = "8:_458323BC85772662528F17C1E3499F69"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_0E36219A358439A160AA8B0ED53FB479"
-        "OwnerKey" = "8:_5711C7F0D19EB146CA5372B62D992BC8"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_1CDCC409B0D0A1118A4987FA1A64FBE8"
-        "OwnerKey" = "8:_21346061E3865D7AD1E4B4E44FFE48F6"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_1CDCC409B0D0A1118A4987FA1A64FBE8"
-        "OwnerKey" = "8:_458323BC85772662528F17C1E3499F69"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
         "MsmKey" = "8:_1CDCC409B0D0A1118A4987FA1A64FBE8"
         "OwnerKey" = "8:_5711C7F0D19EB146CA5372B62D992BC8"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_1CDCC409B0D0A1118A4987FA1A64FBE8"
-        "OwnerKey" = "8:_C7B97380AC624EA58F6BC10625341AF8"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -99,8 +81,8 @@
         }
         "Entry"
         {
-        "MsmKey" = "8:_21346061E3865D7AD1E4B4E44FFE48F6"
-        "OwnerKey" = "8:_C7B97380AC624EA58F6BC10625341AF8"
+        "MsmKey" = "8:_3886948154B74138A692CDD9B55B789E"
+        "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -113,24 +95,6 @@
         {
         "MsmKey" = "8:_3FC6F2902BF236B581503CA9C9B1F197"
         "OwnerKey" = "8:_C7B97380AC624EA58F6BC10625341AF8"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_418B0604AE1E443EBC91D5596706F53E"
-        "OwnerKey" = "8:_UNDEFINED"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_458323BC85772662528F17C1E3499F69"
-        "OwnerKey" = "8:_C7B97380AC624EA58F6BC10625341AF8"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_458323BC85772662528F17C1E3499F69"
-        "OwnerKey" = "8:_21346061E3865D7AD1E4B4E44FFE48F6"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -214,18 +178,6 @@
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_458323BC85772662528F17C1E3499F69"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_418B0604AE1E443EBC91D5596706F53E"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_UNDEFINED"
         "OwnerKey" = "8:_3B44559BBCE241F889F94B250F58DD5D"
         "MsmSig" = "8:_UNDEFINED"
         }
@@ -239,6 +191,12 @@
         {
         "MsmKey" = "8:_UNDEFINED"
         "OwnerKey" = "8:_5711C7F0D19EB146CA5372B62D992BC8"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_UNDEFINED"
+        "OwnerKey" = "8:_1CDCC409B0D0A1118A4987FA1A64FBE8"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -298,13 +256,19 @@
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_21346061E3865D7AD1E4B4E44FFE48F6"
+        "OwnerKey" = "8:_C7B97380AC624EA58F6BC10625341AF8"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_1CDCC409B0D0A1118A4987FA1A64FBE8"
+        "OwnerKey" = "8:_C7B97380AC624EA58F6BC10625341AF8"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_UNDEFINED"
+        "OwnerKey" = "8:_105ADD5EA38B49CCABEB60BC40D82028"
         "MsmSig" = "8:_UNDEFINED"
         }
     }
@@ -325,6 +289,14 @@
         "PrivateKeyFile" = "8:"
         "TimeStampServer" = "8:"
         "InstallerBootstrapper" = "3:2"
+            "BootstrapperCfg:{63ACBE69-63AA-4F98-B2B6-99F9E24495F2}"
+            {
+            "Enabled" = "11:TRUE"
+            "PromptEnabled" = "11:TRUE"
+            "PrerequisitesLocation" = "2:1"
+            "Url" = "8:"
+            "ComponentsUrl" = "8:"
+            }
         }
         "Release"
         {
@@ -341,6 +313,14 @@
         "PrivateKeyFile" = "8:"
         "TimeStampServer" = "8:"
         "InstallerBootstrapper" = "3:2"
+            "BootstrapperCfg:{63ACBE69-63AA-4F98-B2B6-99F9E24495F2}"
+            {
+            "Enabled" = "11:TRUE"
+            "PromptEnabled" = "11:TRUE"
+            "PrerequisitesLocation" = "2:1"
+            "Url" = "8:"
+            "ComponentsUrl" = "8:"
+            }
         }
     }
     "Deployable"
@@ -401,26 +381,6 @@
             "IsDependency" = "11:TRUE"
             "IsolateTo" = "8:"
             }
-            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_0A8DA16E37EC4131AB2DD687F34B2242"
-            {
-            "SourcePath" = "8:..\\AutoPrintExcel\\Copy.ico"
-            "TargetName" = "8:Copy.ico"
-            "Tag" = "8:"
-            "Folder" = "8:_EE4989F7A4EC4EC7B0CCA1027D8EBB0B"
-            "Condition" = "8:"
-            "Transitive" = "11:FALSE"
-            "Vital" = "11:TRUE"
-            "ReadOnly" = "11:FALSE"
-            "Hidden" = "11:FALSE"
-            "System" = "11:FALSE"
-            "Permanent" = "11:FALSE"
-            "SharedLegacy" = "11:FALSE"
-            "PackageAs" = "3:1"
-            "Register" = "3:1"
-            "Exclude" = "11:FALSE"
-            "IsDependency" = "11:FALSE"
-            "IsolateTo" = "8:"
-            }
             "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_0E36219A358439A160AA8B0ED53FB479"
             {
             "AssemblyRegister" = "3:1"
@@ -450,6 +410,37 @@
             "Register" = "3:1"
             "Exclude" = "11:FALSE"
             "IsDependency" = "11:TRUE"
+            "IsolateTo" = "8:"
+            }
+            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_105ADD5EA38B49CCABEB60BC40D82028"
+            {
+            "AssemblyRegister" = "3:1"
+            "AssemblyIsInGAC" = "11:FALSE"
+            "AssemblyAsmDisplayName" = "8:AutoPrintExcel.resources, Version=1.0.0.0, Culture=vi-VN, processorArchitecture=x86"
+                "ScatterAssemblies"
+                {
+                    "_105ADD5EA38B49CCABEB60BC40D82028"
+                    {
+                    "Name" = "8:AutoPrintExcel.resources.dll"
+                    "Attributes" = "3:512"
+                    }
+                }
+            "SourcePath" = "8:..\\AutoPrintExcel\\bin\\x86\\Release\\vi-VN\\AutoPrintExcel.resources.dll"
+            "TargetName" = "8:"
+            "Tag" = "8:"
+            "Folder" = "8:_1066E57352AC4C19895AD99560D98454"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
             }
             "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_1CDCC409B0D0A1118A4987FA1A64FBE8"
@@ -514,21 +505,10 @@
             "IsDependency" = "11:TRUE"
             "IsolateTo" = "8:"
             }
-            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_21346061E3865D7AD1E4B4E44FFE48F6"
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_3886948154B74138A692CDD9B55B789E"
             {
-            "AssemblyRegister" = "3:1"
-            "AssemblyIsInGAC" = "11:FALSE"
-            "AssemblyAsmDisplayName" = "8:Spire.XLS, Version=7.8.0.55040, Culture=neutral, PublicKeyToken=663f351905198cb3, processorArchitecture=MSIL"
-                "ScatterAssemblies"
-                {
-                    "_21346061E3865D7AD1E4B4E44FFE48F6"
-                    {
-                    "Name" = "8:Spire.XLS.dll"
-                    "Attributes" = "3:512"
-                    }
-                }
-            "SourcePath" = "8:Spire.XLS.dll"
-            "TargetName" = "8:"
+            "SourcePath" = "8:..\\AutoPrintExcel\\Copy.ico"
+            "TargetName" = "8:Copy.ico"
             "Tag" = "8:"
             "Folder" = "8:_EE4989F7A4EC4EC7B0CCA1027D8EBB0B"
             "Condition" = "8:"
@@ -542,7 +522,7 @@
             "PackageAs" = "3:1"
             "Register" = "3:1"
             "Exclude" = "11:FALSE"
-            "IsDependency" = "11:TRUE"
+            "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
             }
             "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_3B44559BBCE241F889F94B250F58DD5D"
@@ -590,68 +570,6 @@
                     }
                 }
             "SourcePath" = "8:System.Net.Http.WebRequest.dll"
-            "TargetName" = "8:"
-            "Tag" = "8:"
-            "Folder" = "8:_EE4989F7A4EC4EC7B0CCA1027D8EBB0B"
-            "Condition" = "8:"
-            "Transitive" = "11:FALSE"
-            "Vital" = "11:TRUE"
-            "ReadOnly" = "11:FALSE"
-            "Hidden" = "11:FALSE"
-            "System" = "11:FALSE"
-            "Permanent" = "11:FALSE"
-            "SharedLegacy" = "11:FALSE"
-            "PackageAs" = "3:1"
-            "Register" = "3:1"
-            "Exclude" = "11:FALSE"
-            "IsDependency" = "11:TRUE"
-            "IsolateTo" = "8:"
-            }
-            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_418B0604AE1E443EBC91D5596706F53E"
-            {
-            "AssemblyRegister" = "3:1"
-            "AssemblyIsInGAC" = "11:FALSE"
-            "AssemblyAsmDisplayName" = "8:AutoPrintExcel.resources, Version=1.0.0.0, Culture=vi-VN, processorArchitecture=x86"
-                "ScatterAssemblies"
-                {
-                    "_418B0604AE1E443EBC91D5596706F53E"
-                    {
-                    "Name" = "8:AutoPrintExcel.resources.dll"
-                    "Attributes" = "3:512"
-                    }
-                }
-            "SourcePath" = "8:C:\\Program Files (x86)\\HonC\\My Product Name\\vi-VN\\AutoPrintExcel.resources.dll"
-            "TargetName" = "8:"
-            "Tag" = "8:"
-            "Folder" = "8:_1066E57352AC4C19895AD99560D98454"
-            "Condition" = "8:"
-            "Transitive" = "11:FALSE"
-            "Vital" = "11:TRUE"
-            "ReadOnly" = "11:FALSE"
-            "Hidden" = "11:FALSE"
-            "System" = "11:FALSE"
-            "Permanent" = "11:FALSE"
-            "SharedLegacy" = "11:FALSE"
-            "PackageAs" = "3:1"
-            "Register" = "3:1"
-            "Exclude" = "11:FALSE"
-            "IsDependency" = "11:FALSE"
-            "IsolateTo" = "8:"
-            }
-            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_458323BC85772662528F17C1E3499F69"
-            {
-            "AssemblyRegister" = "3:1"
-            "AssemblyIsInGAC" = "11:FALSE"
-            "AssemblyAsmDisplayName" = "8:Spire.Pdf, Version=3.4.183.55040, Culture=neutral, PublicKeyToken=663f351905198cb3, processorArchitecture=MSIL"
-                "ScatterAssemblies"
-                {
-                    "_458323BC85772662528F17C1E3499F69"
-                    {
-                    "Name" = "8:Spire.Pdf.dll"
-                    "Attributes" = "3:512"
-                    }
-                }
-            "SourcePath" = "8:Spire.Pdf.dll"
             "TargetName" = "8:"
             "Tag" = "8:"
             "Folder" = "8:_EE4989F7A4EC4EC7B0CCA1027D8EBB0B"
@@ -1076,7 +994,7 @@
             "Target" = "8:_C7B97380AC624EA58F6BC10625341AF8"
             "Folder" = "8:_2E1BE3EA92AF4EA3AC942AA521328FBE"
             "WorkingFolder" = "8:_EE4989F7A4EC4EC7B0CCA1027D8EBB0B"
-            "Icon" = "8:_0A8DA16E37EC4131AB2DD687F34B2242"
+            "Icon" = "8:_3886948154B74138A692CDD9B55B789E"
             "Feature" = "8:"
             }
             "{970C0BB2-C7D0-45D7-ABFA-7EC378858BC0}:_D37CCAA7124C45A2B8DC045774685524"
@@ -1104,7 +1022,7 @@
             "Target" = "8:_EE4989F7A4EC4EC7B0CCA1027D8EBB0B"
             "Folder" = "8:_EE4989F7A4EC4EC7B0CCA1027D8EBB0B"
             "WorkingFolder" = "8:_EE4989F7A4EC4EC7B0CCA1027D8EBB0B"
-            "Icon" = "8:_0A8DA16E37EC4131AB2DD687F34B2242"
+            "Icon" = "8:_3886948154B74138A692CDD9B55B789E"
             "Feature" = "8:"
             }
         }

@@ -39,7 +39,6 @@ namespace AutoPrintExcel
         public static bool _USECUSTOMSETTINGS = false;
 
 
-
         public static void PrintProcess(string _Path)
         {
 
