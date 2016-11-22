@@ -2023,14 +2023,9 @@ namespace AutoPrintExcel
 
                 _excel.DisplayAlerts = true;
 
-
             }
 
-
-
         }
-
-
 
         private void AutoSaveEachSheetKenSa(string _path)
         {

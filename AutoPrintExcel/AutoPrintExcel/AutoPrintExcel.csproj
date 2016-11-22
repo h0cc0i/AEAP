@@ -108,6 +108,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Button_Class\btnClass.cs" />
+    <Compile Include="CheckOkuriJou.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CheckOkuriJou.Designer.cs">
+      <DependentUpon>CheckOkuriJou.cs</DependentUpon>
+    </Compile>
     <Compile Include="FixNameofDefineListBC.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -143,6 +149,9 @@
     <Compile Include="wfListPageSource.Designer.cs">
       <DependentUpon>wfListPageSource.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="CheckOkuriJou.resx">
+      <DependentUpon>CheckOkuriJou.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FixNameofDefineListBC.resx">
       <DependentUpon>FixNameofDefineListBC.cs</DependentUpon>
     </EmbeddedResource>
